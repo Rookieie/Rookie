@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="css/index.css"/>
+        <title>前端面试题</title>
+    </head>
+    <body>
+    	<div class="container">
+    		<h2>前端面试题</h2>
+    		<p class="captional">HTML相关的问题</p>
+    		<P class="question">文档类型的作用是什么？有多少种文档类型</P>
+    		<p class="answer">文档类型的作用是让浏览器能够识别识别是哪种文档，以便正确的显示文档。文档的类型有html超文本文档，ICL图标库文件，ICM图形颜色匹配配置文件等</p>
+    		<p class="question">使用XHTML的局限有哪些？</p>
+    		<p class="answer">XHTML的要求比较要个，必须有head和body标签，而且每个标签必须要闭合，同时一些老的浏览器不支持XHTML</p>
+    		<p class="question">请描述一下cookies、sessionStorage和localStorage的区别</p>
+    		<p class="answer">共同点：都是保存在浏览器端，且同源的（同源是同协议，同端口，同域名）；不同点：cookie数据始终在同源的http请求中携带（即使不需要），即cookie在浏览器和服务器间来回传递。而sessionStorage和localStorage不会自动把数据发给服务器，仅在本地保存。cookie数据还有路径的概念，可以限制cookie只属于某个路径下。存储大小限制也不同，cookie数据不能超过4K，同时因为每次http请求都会携带cookie，所以cookie只适合保存很小的数据。sessionStorage和localStorage的存储比cookie大得多，可以达到5M或更大。数据的有效期不同，sessionStorage仅在当前浏览器窗口关闭前有效；localStorage始终有效，窗口或浏览器关闭也一直有效；cookie只在设置的cookie过期时间前一直有效，即使窗口或浏览器关闭。作用域不同，sessionStorage不在不同的浏览器窗口中共享，即使是同一个页面；localStorage在所有同源窗口中都是共享的；cookie也是在所有同源窗口中都是共享的。</p>
+    		<p class="question">HTML5的页面结构同HTML4或者更前的HTML有什么区别？</p>
+    		<p class="answer">一个典型的WEB页面包含头部，脚部，导航，中心区域，侧边栏。现在如果我们想在HTML4的HTML区域中呈现这些内容，我们可能需要使用DIV标签。但是在HTML5中我们通过为这些区域创建元素名称使他们更加清晰，也使得你的HTML更加可读</p>
+    		<p class="captional">javascript相关的问题</p>
+    		<p class="question">Javascript包括哪些数据类型</p>
+    		<p class="answer">Javascript包括的数据类型有：数字、字符串、布尔值、对象、undefined、null</p>
+    		<p class="question">怎么判断JavaScript中的数据类型</p>
+    		<p class="answer">使用typeof，typeof 数字==number；typeof 字符串==string；typeof 布尔值==Boolean；typeof undefined==undefined；typeof function==function；typeof 其他==object</p>
+    		<p class="question">js中如何定义一个类，如何扩展prototype？</p>
+    		<p class="answer">可以用以下的方法：1.函数法：function cat(){
+    			this.name="长毛";
+    		};
+    		var cat = new cat();
+    		console.log(cat.name);
+    		cat.prototype.sound=function(){
+    			return "喵喵喵";
+    		}
+    		console.log(cat.sound);
+    		2.对象法：var cat={
+    			name:"大毛",
+    			sound:"喵喵喵"
+    		};
+    		var cat_1=object.create(cat);
+    		3.极简主义法：var obj={
+    			create:function(){
+    				var cat={};
+    				cat.name="大毛";
+    				cat.sound="喵喵喵";
+    				return cat;
+    			}
+    		}
+    		var car_1=obj.create();
+    		4.继承：var animal={
+    			create:function(){
+    				var animal_1={};
+    				animal_1.sleep="睡觉";
+    				return animal_1;
+    			}
+    		}
+    		var obj={
+    			create:function(){
+    				var cat=animal.create();
+    				cat.name="大毛;
+    				return cat;
+    			}
+    		}
+    		</p>
+    		<p class="question">js的基础对象有哪些？window和document的常用方法和属性？</p>
+    		<p class="answer">js的基础对象有：object对象，number对象，Array对象，string对象，Boolean对象，Math对象，Date对象。window的常用方法：alert：显示一个带有“确定”按钮的对话框；confirm：显示带有“确定”和“取消”两个按钮的对话框；prompt：显示带有输入框的对话框；close：关闭打开的窗口；open：打开一个新的窗口。window的常用属性：defaultstatus：指定窗口状态栏中的信息；status：指定当前窗口状态栏的信息；frames：含有窗口中所有框架的数组；parent：当前窗口的父窗口；top：指最顶层窗口；self：指当前窗口。document常用的方法：write：向页面写内容；open：打开文档；close：关闭文档；clear：消除文档的内容。document常用的属性：alinkcolor：活动链接颜色；linkcolor：链接颜色；vlinkcolor：已访问过链接的颜色；anchors：页内链接；bgcolor：背景颜色；fgcolor：前景颜色；cookie：存取在本地的颜色；forms：表单元素。</p>
+    		<p class="question">ajax是什么？同步和异步的区别？</p>
+    		<p class="answer">ajax是一种创建交互式网页的网页开发技术。ajax利用浏览器内置的一个对象XMLHttpRequest向服务器发送请求，是以异步的方式进行发送的。异步的方式可以在你向服务器发送请求后，在服务器还没响应之前可以继续对页面进行操作，服务器处理完请求之后也不需要发送一个页面，只需要将用户想要的数据发送过来就行。同步的方式用户向服务器发送请求后必须等到服务器响应之后才能对页面进行操作。等待响应时什么都不可以做。</p>
+    		<p class="question">多浏览器的检测通过什么</p>
+    		<p class="answer">通过navigator对象，navigator.appName返回浏览器的类型，navigator.appVersion返回浏览器的版本信息。</p>
+    	</div>
+    	<script type="text/javascript" src="index.js"></script>
+    </body>
+</html>

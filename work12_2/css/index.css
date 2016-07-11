@@ -1,0 +1,23 @@
+/*
+* @Author: milkpure
+* @Date:   2016-07-06 09:07:41
+* @Last Modified by:   milkpure
+* @Last Modified time: 2016-07-06 11:15:39
+*/
+body{
+	background-color:#696969;
+}
+.container{
+	width: 1000px;
+	margin:0 auto;
+}
+.captional{
+	color:#ff0000;
+	font-weight:bold;
+}
+.question{
+	color:#ffd700;
+}
+.answer{
+	color:#fff;
+}

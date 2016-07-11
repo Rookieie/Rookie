@@ -1,0 +1,119 @@
+/*最外层的样式*/
+.container {
+  width: 700px;
+  height: 400px;
+  margin: 200px auto;
+  position: relative;
+  border: 2px solid #666;
+  border-radius: 5px;
+}
+/*站牌上半部分的样式*/
+.up {
+  width: 650px;
+  height: 150px;
+  margin: 0 auto;
+}
+/*上半部分的左边的样式*/
+.up_left {
+  display: inline-block;
+  width: 240px;
+  height: 150px;
+}
+.up_left div {
+  width: 200px;
+  height: 80px;
+  background-color: #ff0000;
+  color: #fff;
+  font-size: 42px;
+  text-align: center;
+  line-height: 80px;
+}
+.up_left p {
+  color: #000;
+  font-size: 14px;
+  font-weight: bold;
+}
+/*站牌上半部分右边的样式*/
+.up_right {
+  display: inline-block;
+  width: 380px;
+  height: 150px;
+}
+.up_right h3 {
+  color: #006400;
+  text-align: center;
+}
+.p1 {
+  color: #006400;
+  text-align: center;
+}
+.p2 {
+  color: #ff0000;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+/*站牌下半部分的样式*/
+.down {
+  width: 650px;
+  height: 250px;
+  margin: 5px auto;
+  position: relative;
+}
+/*站牌各站信息的样式*/
+.line {
+  width: 600px;
+  height: 150px;
+  background-color: #006400;
+}
+.line table {
+  margin: 10px 20px;
+}
+.line td {
+  width: 15px;
+  color: #fff;
+  font-size: 14px;
+  vertical-align: top;
+  text-align: center;
+  margin-left: 10px;
+  border-collapse: separate;
+  border-spacing: 15px 10px;
+  border: 1px solid #006400;
+}
+/*公交行驶的方向*/
+.direction {
+  width: 600px;
+  height: 100px;
+  position: relative;
+}
+.direction span {
+  position: absolute;
+  display: inline-block;
+  width: 350px;
+  left: 50%;
+  margin-left: -175px;
+  top: 20px;
+  font-size: 12px;
+}
+.i1 {
+  position: absolute;
+  display: inline-block;
+  width: 420px;
+  height: 10px;
+  background-color: #ff0000;
+  left: 50%;
+  margin-left: -210px;
+  top: 50px;
+}
+.i2 {
+  position: absolute;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-bottom: 0;
+  border-top: 20px solid transparent;
+  border-left: 60px solid #ff0000;
+  border-right: 60px solid transparent;
+  left: 85%;
+  top: 40px;
+}

@@ -1,0 +1,113 @@
+.class1(@x,@y){
+	width:@x;
+	height:@y;
+}
+/*最外层的样式*/
+.container{
+	.class1(700px,400px);
+	margin:200px auto;
+	position:relative;
+	border:2px solid #666;
+	border-radius:5px;
+}
+/*站牌上半部分的样式*/
+.up{
+	.class1(650px,150px);
+	margin:0 auto;
+}
+.class2(@x,@y){
+	color:@x;
+	font-size:@y;
+}
+/*上半部分的左边的样式*/
+.up_left{
+	display:inline-block;
+	.class1(240px,150px);
+	div{
+		.class1(200px,80px);
+		background-color:#ff0000;
+		.class2(#fff,42px);
+		text-align:center;
+		line-height:80px;
+	}
+	p{
+		.class2(#000,14px);
+		font-weight:bold;
+	}
+}
+/*站牌上半部分右边的样式*/
+.up_right{
+	display:inline-block;
+	.class1(380px,150px);
+	h3{
+		color:#006400;
+		text-align:center;
+	}
+}
+.p1{
+	color:#006400;
+	text-align:center;
+}
+.p2{
+	.class2(#ff0000,20px);
+	font-weight:bold;
+	text-align:center;
+}
+/*站牌下半部分的样式*/
+.down{
+	.class1(650px,250px);
+	margin:5px auto;
+	position:relative;
+}
+/*站牌各站信息的样式*/
+.line{
+	.class1(600px,150px);
+	background-color:#006400;
+	table{
+		margin:10px 20px;
+	}
+	td{
+		width:15px;
+		.class2(#fff,14px);
+		vertical-align:top;
+		text-align:center;
+		margin-left:10px;
+		border-collapse:separate;
+		border-spacing:15px 10px;
+		border:1px solid #006400;
+	}
+}
+/*公交行驶的方向*/
+.direction{
+	.class1(600px,100px);
+	position:relative;
+	span{
+		position:absolute;
+		display:inline-block;
+		width:350px;
+		left:50%;
+		margin-left:-175px;
+		top:20px;
+		font-size:12px;
+	}
+}
+.i1{
+	position:absolute;
+	display:inline-block;
+	.class1(420px,10px);
+	background-color:#ff0000;
+	left:50%;
+	margin-left:-210px;
+	top:50px;
+}
+.i2{
+	position:absolute;
+	display:inline-block;
+	.class1(0,0);
+	border-bottom:0;
+	border-top:20px solid transparent;
+	border-left:60px solid #ff0000;
+	border-right:60px solid transparent;
+	left:85%;
+	top:40px;
+}

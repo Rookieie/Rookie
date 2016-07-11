@@ -1,0 +1,55 @@
+.container{
+	border:1px solid #888;
+	width: 360px;
+	height: 450px;
+	margin:0 auto;
+	background-color: #888;
+	border-radius: 10px;
+}
+/*显示部分的样式*/
+.div_1{
+	width: 300px;
+	height: 40px;
+	margin:50px auto;
+	border:1px solid #666;
+	background-color: #ccc;
+	display: block;
+	font-size: 20px;
+	border-radius: 5px;
+	box-sizing: border-box;
+	padding-left:10px;
+}
+/*表格的样式*/
+.div_2 table{
+	border-spacing: 0;
+	border-collapse: collapse;
+	margin:0 auto;
+}
+/*单元格的样式*/
+.div_2 td{
+	width: 100px;
+	border:1px solid #888;
+}
+/*单元格中各个按钮的样式*/
+.div_2 td input{
+	display: inline-block;
+	width:100px;
+	height:40px;
+	cursor:pointer;
+	font-size: 20px;
+	text-align: center;
+	border:0;
+	border-radius: 5px;
+	background-color: #ccc;
+	outline: 0;
+}
+/*重置样式*/
+#reset{
+	width:50px;
+	float: left;
+	border-right:1px solid #666;
+}
+/*.的样式*/
+#dot{
+	width: 50px;
+}

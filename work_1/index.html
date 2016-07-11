@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>计算器</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+</head>
+<body>
+	<div class="container">
+	<!-- 显示运算的部分 -->
+		<input class="div_1" id="screen" readonly="readonly"/>
+		<!-- 按钮部分 -->
+		<div class="div_2">
+			<table id="table">
+				<tr>
+					<td>
+					<!-- 数值1 -->
+						<input type="button" id="one" value="1" />
+					</td>
+					<td>
+					<!-- 数值2 -->
+						<input type="button" id="two" value="2" />
+					</td>
+					<td>
+					<!-- 数值3 -->
+						<input type="button" id="three"
+						value="3" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<!-- 数值4 -->
+						<input type="button" id="four" value="4" />
+					</td>
+					<td>
+					<!-- 数值5 -->
+						<input type="button" id="five" value="5" />
+					</td>
+					<td>
+					<!-- 数值6 -->
+						<input type="button" id="six" value="6" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<!-- 数值7 -->
+						<input type="button" id="seven" value="7" />
+					</td>
+					<td>
+					<!-- 数值8 -->
+						<input type="button" id="eight" value="8" />
+					</td>
+					<td>
+					<!-- 数值9 -->
+						<input type="button" id="nine"
+						value="9" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<!-- 数值0 -->
+						<input type="button" id="zero"
+						value="0" />
+					</td>
+					<td>
+					<!-- 加法运算符 -->
+						<input type="button" id="plus"
+						value="+" />
+					</td>
+					<td>
+					<!-- 减法运算符 -->
+						<input type="button" id="minus" value="-" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<!-- 乘法运算符 -->
+						<input type="button" id="mul" value="*" />
+					</td>
+					<td>
+					<!-- 除法运算符 -->
+						<input type="button" id="divide" value="/" />
+					</td>
+					<td>
+					<!-- 重置 -->
+						<input type="button" id="reset" value="C"/>
+					<!-- . -->
+						<input type="button" id="dot" value="."/>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<!-- sin -->
+						<input type="button" value="sin"/>
+					</td>
+					<td>
+					<!-- cos -->
+						<input type="button" value="cos"/>
+					</td>
+					<td>
+					<!-- = -->
+						<input type="button" value="="/>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
